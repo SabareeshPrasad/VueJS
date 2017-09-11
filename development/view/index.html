@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="welcome">
+			{{message}}
+			<sample :text="message"></sample>
+			<div v-html="rawHTML"></div>
+			{{reverseMessage}}
+			<button v-on:click="count = count+ 1"> {{count}} </button>
+		</div>
+
+		<script src="../js/index.js"> </script>
+	</body>
+</html>
